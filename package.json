@@ -4,6 +4,7 @@
   "description": "Web app that gets and shows jokes from The Official Chuck Norris Jokes API",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
