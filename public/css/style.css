@@ -1,0 +1,26 @@
+body {
+    margin: 1rem;
+    padding: 1rem;
+}
+h1.title {
+    margin-top: 0;
+}
+.container {
+    width: 100%;
+}
+.section-categories {}
+.btn-category {
+    margin: 0.1em;
+}
+.btn-joke {
+    display: none;
+}
+.section-jokes {}
+
+footer {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    height: 3em;
+    text-align: center;
+}

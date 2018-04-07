@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Unofficial Chuck Norris Web App for Official Chuck Norris Jokes</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+	<h1 class="title">The Unofficial Chuck Norris Web App for Official Chuck Norris Jokes</h1>
+	<ul class="section-categories">
+	  <% for(let i=0; i<categories.length; i++) {%>
+	     <% let cat = categories[i] %>
+	     <li>
+	       <button class="btn-category" onclick="showOptions('<%= cat %>')"><%= cat %></button>
+	       <button id="category-<%= cat %>" class="btn-joke" onclick="sendCategory('<%= cat %>')">Gimme <%= cat %> jokes!</button>
+	     </li>
+	     <% } %>
+	</ul>
+      </div>
+    </header>
+    <div id="jokes" class="container section-jokes">
+      
+    </div>
+    <footer>
+      <div class="container">
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/index.js" ></script>
+  </body>
+</html>
