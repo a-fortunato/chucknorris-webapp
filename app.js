@@ -2,7 +2,7 @@
 
 const Chuck = require('chucknorris-io')
 const express = require('express')
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser')
 
 const app = express()
 const client = new Chuck()

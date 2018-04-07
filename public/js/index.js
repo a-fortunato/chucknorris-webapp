@@ -11,12 +11,12 @@ function sendCategory(cat) {
       if(res.ok){
 	res.json().then( data => {
 	  const div = document.getElementById("jokes")
-	  let joke = data.joke
+	  const joke = data.joke
 	  
 	  return [joke].map(phrase => {
 	    let p = document.createElement('p')
 	    p.innerHTML = `<strong>${cat} joke:</strong> ${joke}`
-	    div.appendChild(p)
+	    div.prepend(p) 
 	  })
 	})
       }
