@@ -13,11 +13,9 @@ function sendCategory(cat) {
 	  const div = document.getElementById("jokes")
 	  const joke = data.joke
 	  
-	  return [joke].map(phrase => {
-	    let p = document.createElement('p')
-	    p.innerHTML = `<strong>${cat} joke:</strong> ${joke}`
-	    div.prepend(p) 
-	  })
+	  const p = document.createElement('p')
+	  p.innerHTML = `<strong>${cat} joke:</strong> ${joke}`
+	  div.prepend(p)
 	})
       }
     })
